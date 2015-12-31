@@ -11,7 +11,6 @@ chmod 755 /home/vagrant/provision/utilities.sh
 /home/vagrant/provision/utilities.sh
 chmod 755 /home/vagrant/provision/nodejs.sh
 /home/vagrant/provision/nodejs.sh
-# if [[ "$nodejs" = 1 ]]; then /pd_build/nodejs.sh; fi
 chmod 755 /home/vagrant/provision/nginx-passenger.sh
 /home/vagrant/provision/nginx-passenger.sh
 chmod 755 /home/vagrant/provision/finalize.sh
