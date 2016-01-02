@@ -10,7 +10,7 @@ does_group_exist(){
   [ $result -eq 1 ]
 }
 # com.apple.access_ftp
-if does_group_exist;
+if does_group_exist app;
 then
   echo "The group exists"
 else
