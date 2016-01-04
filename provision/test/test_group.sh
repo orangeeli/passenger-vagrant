@@ -5,9 +5,9 @@
 # $(does_group_exist app)
 
 does_group_exist(){
-  local result=$(grep -ic "^$1:" /etc/group)
+  local result=$(grep -ic "^app:" /etc/group)
   # echo "$result"
-  assertEquals $result 1
+  assertFalse "This test should fail" [$result -eq 1]
 }
 
 . shunit2-2.0.3/src/shell/shunit2

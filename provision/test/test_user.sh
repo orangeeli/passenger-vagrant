@@ -11,9 +11,9 @@
 # fi
 
 does_user_exist(){
-  local result=$(grep -ic "^$1:" /etc/passwd)
+  local result=$(grep -ic "^app:" /etc/passwd)
   # echo "$result"
-  assertEquals $result 1
+  assertFalse "This test should fail" [$result -eq 1]
 }
 
 . shunit2-2.0.3/src/shell/shunit2
