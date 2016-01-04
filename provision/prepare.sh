@@ -1,15 +1,16 @@
 #!/bin/bash
 set -e
 source /home/vagrant/provision/buildconfig
+source /home/vagrant/provision/scripts/group_exists
 set -x
 
 ## Create a user for the web app.
 
-group_exists(){
-  local result=$(grep -ic "^$1:" /etc/group)
+#group_exists(){
+#  local result=$(grep -ic "^$1:" /etc/group)
   # echo "$result"
-  [ $result -eq 1 ]
-}
+#  [ $result -eq 1 ]
+#}
 
 user_exists(){
   local result=$(grep -ic "^$1:" /etc/passwd)

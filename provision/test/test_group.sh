@@ -1,13 +1,14 @@
 #!/bin/bash
-#set -e
-#set -x
+set -e
+source /home/vagrant/provision/scripts/group_exists
+set -x
 
 # $(does_group_exist app)
 
 does_group_exist(){
-  local result=$(grep -ic "^app:" /etc/group)
+  local result=group_exists "app"
   # echo "$result"
-  assertFalse "This test should fail" [$result -eq 1]
+  assertFalse "This test should fail" result
 }
 
 . shunit2-2.0.3/src/shell/shunit2

@@ -1,0 +1,11 @@
+#!/bin/bash
+export LC_ALL=C
+export DEBIAN_FRONTEND=noninteractive
+set -e
+set -x
+
+group_exists(){
+  local result=$(grep -ic "^$1:" /etc/group)
+  # echo "$result"
+  [ $result -eq 1 ]
+}
