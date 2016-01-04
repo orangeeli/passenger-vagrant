@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-source /home/vagrant/provision/scripts/group_exists
+source ../scripts/group_exists
 set -x
 
 # $(does_group_exist app)
