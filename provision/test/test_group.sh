@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-source ../scripts/group_exists
+source provision/scripts/group_exists
 set -x
 
 # $(does_group_exist app)
