@@ -5,10 +5,12 @@ set -x
 
 # $(does_group_exist app)
 
+pwd
+
 does_group_exist(){
   local result=group_exists "app"
   # echo "$result"
-  assertFalse "This test should fail" result
+  assertFalse "This test should fail" $result
 }
 
 . shunit2-2.0.3/src/shell/shunit2

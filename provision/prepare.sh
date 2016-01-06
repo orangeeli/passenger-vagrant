@@ -12,11 +12,11 @@ set -x
 #  [ $result -eq 1 ]
 #}
 
-user_exists(){
-  local result=$(grep -ic "^$1:" /etc/passwd)
+#user_exists(){
+#  local result=$(grep -ic "^$1:" /etc/passwd)
   # echo "$result"
-  [ $result -eq 1 ]
-}
+#  [ $result -eq 1 ]
+#}
 
 main(){
   local group="app"
