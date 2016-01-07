@@ -1,17 +1,17 @@
 #!/bin/bash
 set -e
 source /home/vagrant/provision/buildconfig
+source /home/vagrant/provision/scripts/permission
 set -x
 
-chmod 755 /home/vagrant/provision/enable_repos.sh
-/home/vagrant/provision/enable_repos.sh
-chmod 755 /home/vagrant/provision/prepare.sh
-/home/vagrant/provision/prepare.sh
-chmod 755 /home/vagrant/provision/utilities.sh
-/home/vagrant/provision/utilities.sh
-chmod 755 /home/vagrant/provision/nodejs.sh
-/home/vagrant/provision/nodejs.sh
-chmod 755 /home/vagrant/provision/nginx-passenger.sh
-/home/vagrant/provision/nginx-passenger.sh
-chmod 755 /home/vagrant/provision/finalize.sh
-/home/vagrant/provision/finalize.sh
+main(){
+  local path="/home/vagrant/provision"
+  run_script "$path/enable_repos.sh"
+  run_script "$path/prepare.sh"
+  run_script "$path/utilities.sh"
+  run_script "$path/nodejs.sh"
+  run_script "$path/nginx-passenger.sh"
+  run_script "$path/finalize.sh"
+}
+
+main

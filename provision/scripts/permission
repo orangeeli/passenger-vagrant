@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+set -x
+
+run_script(){
+  chmod 755 $1
+  eval $1
+}
