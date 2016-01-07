@@ -13,7 +13,7 @@ mkdir -p /etc/nginx/main.d
 cp /home/vagrant/provision/config/nginx_main_d_default.conf /etc/nginx/main.d/default.conf
 
 ## Install Nginx runit service.
-mkdir /etc/service/nginx
+mkdir -p /etc/service/nginx
 cp /home/vagrant/provision/runit/nginx /etc/service/nginx/run
 touch /etc/service/nginx/down
 
