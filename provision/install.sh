@@ -11,6 +11,7 @@ main(){
   run_script "$path/utilities.sh"
   run_script "$path/nodejs.sh"
   run_script "$path/nginx-passenger.sh"
+  run_script "$path/mongodb.sh"
   run_script "$path/finalize.sh"
 }
 
