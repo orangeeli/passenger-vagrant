@@ -6,3 +6,7 @@ run_script(){
   chmod 755 $1
   eval $1
 }
+
+set_exec_permission(){
+  chmod 755 $1
+}
