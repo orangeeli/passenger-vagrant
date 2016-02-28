@@ -10,6 +10,9 @@ apt-get install -y mongodb-org
 
 ## because of this
 ## http://stackoverflow.com/questions/26337557/badvalue-invalid-or-no-user-locale-set-please-ensure-lang-and-or-lc-environme
+echo "export LANGUAGE=en_US.UTF-8" >> /home/vagrant/.bashrc
+echo "export LANG=en_US.UTF-8" >> /home/vagrant/.bashrc
+echo "export LC_ALL=en_US.UTF-8" >> /home/vagrant/.bashrc
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
