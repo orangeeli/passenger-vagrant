@@ -5,6 +5,19 @@
 
 Based on the project passenger docker, the aim of this project is to provide a base development environment for nodejs web apps, with [Phusion Passenger](https://www.phusionpassenger.com/) and [Vagrant](https://vagrant.com). If you're looking for a deployment environment, be sure to go to [Passenger Docker](https://github.com/phusion/passenger-docker).
 
+# How to get the box
+The box is publicly available on this link, [trusty_panomo](https://atlas.hashicorp.com/orangeeli/boxes/trusty_panomo/), (*pa* - passenger; *no* - nodejs; *mo* - mongo).
+
+## Requirements
+* [Vagrant (1.8.1)](https://www.vagrantup.com/)
+* [Virtualbox (5.0.2)](https://www.virtualbox.org/wiki/Downloads)
+
+## What does it have
+* ubuntu 14.04 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/Vagrantfile)
+* nodejs 5 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
+* passenger-nginx 5 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
+* mongodb 3.2 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
+
 ### Status
 [![Build Status](https://travis-ci.org/orangeeli/passenger-vagrant.svg?branch=master)](https://travis-ci.org/orangeeli/passenger-vagrant)
 
