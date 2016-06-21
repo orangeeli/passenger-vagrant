@@ -1,2 +1,4 @@
 .DS_Store
 .vagrant
+blog/
+nodejs-mongo-passenger-nginx-v0.2.box
