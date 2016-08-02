@@ -14,7 +14,7 @@ The box is publicly available on this link, [trusty_panomo](https://atlas.hashic
 
 ## What does it have
 * ubuntu 14.04 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/Vagrantfile)
-* nodejs 5 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
+* nodejs 6 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
 * passenger-nginx 5 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
 * mongodb 3.2 - You can change the version [here](https://github.com/orangeeli/passenger-vagrant/blob/master/provision/enable_repos.sh)
 
