@@ -30,6 +30,6 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys \
 ## NodeSource's Node.js repository
 ## This also runs apt-get update
 #curl --fail -ssL -o /tmp/setup-nodejs https://deb.nodesource.com/setup_0.12
-curl --fail -ssL -o /tmp/setup-nodejs https://deb.nodesource.com/setup_5.x
+curl --fail -ssL -o /tmp/setup-nodejs https://deb.nodesource.com/setup_6.x
 bash /tmp/setup-nodejs
 rm -f /tmp/setup-nodejs
